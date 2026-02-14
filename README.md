@@ -48,26 +48,27 @@ FrozenLake-v1 (is_slippery=False)
 ## 📦 Installation
 
 Create and activate a virtual environment (recommended with Anaconda):
-
+```bash
 conda create -n rl_qlearn python=3.10 -y  
-conda activate rl_qlearn  
+conda activate rl_qlearn
+```
 
 Install dependencies:
-
+```bash
 pip install gymnasium numpy matplotlib  
-
+```
 Verify installation:
-
+```bash
 python -c "import gymnasium, numpy, matplotlib; print('Installation successful')"
-
+```
 ---
 
 ## ▶️ Running the Project
 
 Run the main training script:
-
+```bash
 python qlearning_frozenlake.py  
-
+```
 The script will:
 
 - Train the Q-learning agent  
@@ -186,7 +187,3 @@ Exploration strategy: ϵ-greedy.
 ## 👨‍💻 Author
 
 **Omar Shaqaqi**  
-MSc Robotics & Autonomous Systems  
-KFUPM  
-
-GitHub: https://github.com/OmarShaqaqi/RL-frozenLake
