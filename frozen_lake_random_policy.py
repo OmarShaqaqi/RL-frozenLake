@@ -20,7 +20,7 @@ explorer = EpsilonGreedy(1)
 
 
 def run(num_epochs) : 
-    env = gym.make("FrozenLake-v1", render_mode= RENDER_MODE)
+    env = gym.make("FrozenLake-v1", render_mode= RENDER_MODE,is_slippery=True)
     
     success = 0
     

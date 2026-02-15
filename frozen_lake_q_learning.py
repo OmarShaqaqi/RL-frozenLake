@@ -19,12 +19,12 @@ MAP_DESC = [
         "HFFG"
     ]
 
-TRAIN_EPISODES = 1000         # adjust as needed
+TRAIN_EPISODES = 8000         # adjust as needed
 EVAL_EPISODES = 100
 EVAL_INTERVAL = 10            # fewer eval points = faster
 MOVING_AVG_WINDOW = 200
 
-SLIPPERY = False
+SLIPPERY = True
 SEED = 0
 
 def evaluate_greedy(env, q_table, n_episodes=100):
@@ -89,7 +89,7 @@ def plot_policy_arrows(Q, lake_map, title, save_path):
     plt.show()
 
 def run_one(alpha, gamma, epsilon):
-    env = gym.make("FrozenLake-v1",map_name="4x4", desc=MAP_DESC, is_slippery=SLIPPERY)
+    env = gym.make("FrozenLake-v1",map_name="4x4", desc=MAP_DESC, is_slippery=SLIPPERY, )
     env.reset(seed=SEED)
     np.random.seed(SEED)
 
